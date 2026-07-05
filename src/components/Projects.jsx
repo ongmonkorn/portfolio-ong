@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ProfilePic from '../assets/profile.jpg'
+import Img_ongshop from '../assets/ongshop.jpg'
 
 const projects = [
   {
@@ -14,6 +15,13 @@ const projects = [
     image: ProfilePic,
     tech: " Visual Studio Code / React / Tailwind CSS / JavaScript",
   },
+  {
+    title: "Ong-Shop Fullstack",
+    description: "เว็บไซต์ขายของออนไลน์ขนาดเล็ก ที่มีฟีเจอร์การจัดการสินค้า มีระบบตะกร้าสินค้า",
+    image: Img_ongshop,
+    tech: " Visual Studio Code / React / Javascript / Tailwind CSS / Nodejs / Express / PostgreSQL / JWT / bcryptjs",
+    link: "https://ong-shop.vercel.app/"
+  }
 ];
 
 function Projects() {
@@ -80,7 +88,7 @@ function Projects() {
                 <p className="text-sm text-gray-500 mb-6">{project.tech}</p>
 
                 <a
-                  href="#"
+                  href={project.link}
                   className="text-cyan-400 hover:text-cyan-300 font-semibold"
                 >
                   View Details →
