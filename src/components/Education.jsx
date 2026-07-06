@@ -23,7 +23,7 @@ function Education() {
     <section id="education" className="min-h-screen flex items-center pt-32 px-6 bg-white dark:bg-black">
       <div className="max-w-6xl mx-auto w-full">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          <span className="text-gray-/00"> Education </span>
+          <span className="text-gray-200"> Education </span>
           <span className="text-cyan-400"> & Work </span>
         </h2>
 
