@@ -1,19 +1,14 @@
-import { motion } from "framer-motion";
-import ProfilePic from '../assets/profile.jpg'
+
 import Img_ongshop from '../assets/ongshop.jpg'
+import Img_training from '../assets/training.jpg'
 
 const projects = [
   {
     title: "ระบบบริหารจัดการโครงการอบรม",
     description: "ระบบจัดการโครงการอบรม ที่มีฟีเจอร์การจัดการผู้ใช้งาน โครงการ และการติดตามผลโครงการ",
-    image: ProfilePic,
+    image: Img_training,
     tech: " Visual Studio Code / Html / CSS / JavaScript / PHP / MySQL",
-  },
-  {
-    title: "Portfolio Website",
-    description: "Personal portfolio website showcasing projects and skills",
-    image: ProfilePic,
-    tech: " Visual Studio Code / React / Tailwind CSS / JavaScript",
+    link: "https://github.com/ongmonkorn/projectmyapp.git",
   },
   {
     title: "Ong-Shop Fullstack",
@@ -28,44 +23,26 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center pt-32 px-6 bg-white dark:bg-black snap-start"
+      className="min-h-screen flex items-center pt-32 px-6 bg-white dark:bg-black"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
-        <motion.h2
-          initial={{ opacity: 0, y: -40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+        <h2
+
           className="text-4xl md:text-5xl font-bold text-center mb-16"
         >
           <span className="text-gray-200">My </span>
           <span className="text-cyan-400">Projects</span>
-        </motion.h2>
+        </h2>
 
         {/* Grid */}
-        <motion.div
+        <div
           className="grid md:grid-cols-2 gap-12"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={{
-            hidden: {},
-            visible: {
-              transition: {
-                staggerChildren: 0.2,
-              },
-            },
-          }}
+
         >
           {projects.map((project, index) => (
-            <motion.div
+            <div
               key={index}
-              variants={{
-                hidden: { opacity: 0, y: 60 },
-                visible: { opacity: 1, y: 0 },
-              }}
-              transition={{ duration: 0.7 }}
               className="group bg-gray-100 dark:bg-gray-900/60 backdrop-blur-lg border border-cyan-500/20 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-cyan-500/30 transition"
             >
               {/* Image */}
@@ -91,12 +68,12 @@ function Projects() {
                   href={project.link}
                   className="text-cyan-400 hover:text-cyan-300 font-semibold"
                 >
-                  View Details →
+                  View →
                 </a>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

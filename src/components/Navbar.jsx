@@ -22,10 +22,10 @@ function Navbar({ darkMode, setDarkMode }) {
           <ul className="hidden md:flex space-x-8 text-gray-700 dark:text-gray-300">
             <li>
               <a
-                href="#about"
+                href="#education"
                 className="hover:text-cyan-500 dark:hover:text-cyan-400 transition"
               >
-                About
+                Education
               </a>
             </li>
             <li>
