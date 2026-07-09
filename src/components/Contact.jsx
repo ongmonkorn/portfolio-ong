@@ -13,14 +13,9 @@ function Contact() {
         <h2
           className="text-4xl md:text-5xl font-bold mb-8"
         >
-          <span className="text-gray-200">Get In </span>
-          <span className="text-cyan-400">Touch</span>
+          <span className="text-gray-200">Contact </span>
+          <span className="text-cyan-400">Me</span>
         </h2>
-
-        <p className="text-gray-400 mb-12 max-w-2xl mx-auto">
-          Interested in working together or building secure systems? Let’s
-          connect and create something powerful.
-        </p>
 
         <div className="flex flex-col md:flex-row justify-center gap-6">
           {/* Email Button */}
